@@ -11,9 +11,9 @@
     <div class="col-md-9">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"/></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
@@ -23,9 +23,9 @@
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
@@ -35,9 +35,9 @@
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
@@ -47,9 +47,9 @@
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
@@ -59,9 +59,9 @@
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
@@ -71,9 +71,9 @@
         </div>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="images/45view-1620.jpg" alt="item">
+                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
                 <div class="caption">
-                    <h3>Acer</h3>
+                    <a href = ""><h3>Acer</h3></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>

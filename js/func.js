@@ -33,7 +33,7 @@ setInterval("dateTick()", 1000);
 // таймер обратного отсчета времени
 function taimerTick() {
 	var now = new Date();
-	var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+5);
+	var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
 	var t = tomorrow - Date.now();
 	var sec = Math.ceil(t / 1000);
 	var min = Math.floor(sec / 60);
