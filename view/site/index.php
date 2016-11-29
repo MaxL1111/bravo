@@ -1,4 +1,11 @@
-<?php include __DIR__.'/../layouts/header.php' ?>
+<?php
+require '/../../app/DB.php';
+$db = new DB();
+$products = $db->select("products", "*");
+include __DIR__.'/../layouts/header.php';
+?>
+
+
 
 <div class = "discount row">
     <div class="col-md-12">
@@ -9,78 +16,21 @@
 <div class="content row">
     <?php include __DIR__.'/../layouts/sidebar.php' ?>
     <div class="col-md-9">
+        <?php foreach($products as $product): ?>
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"/></a>
+                <a href = ""><img src="images/<?=$product["img"]?>" alt="item"/></a>
                 <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
+                    <a href = ""><h3><?=$product["title"]?></h3></a>
+                    <p><?=$product["description"]?></p>
+                    <p>Цена: <?=$product["price"]?> BYN</p>
                     <p>
                         <a href="#" class="btn btn-primary" role="button">В корзину</a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
-                <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
-                <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
-                <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
-                <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a href = ""><img src="images/45view-1620.jpg" alt="item"></a>
-                <div class="caption">
-                    <a href = ""><h3>Acer</h3></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur doloremque iste labore veniam? Aliquid, consequatur dolorem eius et hic id labore laboriosam magnam modi molestiae quaerat </p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </div>
 
