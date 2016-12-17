@@ -1,0 +1,7 @@
+bravo_shop_products:
+    resource: "@BravoShopBundle/Resources/config/routing/products.yml"
+    prefix:   /products
+
+bravo_shop_homepage:
+    path:     /
+    defaults: { _controller: BravoShopBundle:Default:index }

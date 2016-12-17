@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class = "discount row">
+        <div class="col-md-12">
+            <p>До конца акции: <span id = "discountEnd">00 дн. 00 часов 00 минут 00 секунд</span></p>
+        </div>
+    </div>
+    {#{% if and or is null is not null is defined %}#}
+    {#{% for key, value in array %}#}
+    {#{{ value }}#}
+    {#{% endfor %}#}
+    {#{% endif %}   #}
+    <div class="content row">
+        <div class="col-md-3">
+            <nav>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active" role="presentation"><a href="#">Комплектующие</a></li>
+                    <li role="presentation"><a href="#">Ноутбуки и планшеты</a></li>
+                    <li role="presentation"><a href="#">Компьютеры</a></li>
+                    <li role="presentation"><a href="#">Цифровое фото и видео</a></li>
+                    <li role="presentation"><a href="#">Аудио-видео техника</a></li>
+                    <li role="presentation"><a href="#">Телефоны</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            {% for product in products %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href = ""><img src="{{ asset('bundles/bravoshop/images/') }}{{product.img }}" alt="item"/></a>
+                    <div class="caption">
+                        <a class = "product" id = "" href = ""><h3>{{product.title }}</h3></a>
+                        <p>Цена: {{product.price }} BYN</p>
+                        <p>
+                            <a href="#" class="btn btn-primary" role="button">В корзину</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

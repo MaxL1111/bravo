@@ -1,0 +1,4 @@
+#services:
+#    bravo_shop.example:
+#      class: Bravo\ShopBundle\Component\DefaultComponent
+#      arguments: ["@service_id", "plain_value", "%parameter%"]
