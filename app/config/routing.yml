@@ -1,3 +1,7 @@
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
 bravo_shop:
     resource: "@BravoShopBundle/Resources/config/routing.yml"
     prefix:   /

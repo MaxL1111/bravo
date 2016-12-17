@@ -1,0 +1,7 @@
+admin_homepage:
+    path:     /admin
+    defaults: { _controller: AdminBundle:Default:index }
+
+admin_products:
+    path:     /admin/products
+    defaults: { _controller: AdminBundle:Product:index }

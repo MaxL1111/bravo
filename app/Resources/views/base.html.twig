@@ -8,15 +8,35 @@
     <link href="{{ asset('bundles/bravoshop/css/style.css') }}" type="text/css" rel="stylesheet">
     <link href="{{ asset('bundles/bravoshop/css/bootstrap.css') }}" type="text/css" rel="stylesheet">
     <link href="{{ asset('bundles/bravoshop/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('bundles/admin/css/datatables.min.css') }}" type="text/css" rel="stylesheet">
+
     <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/ajax.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/all_pages.js') }}"></script>
-
     <script src="{{ asset('bundles/bravoshop/js/bootstrap.js') }}"></script>
     <script src="{{ asset('bundles/bravoshop/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('bundles/bravoshop/js/func.js') }}"></script>
 </head>
 <body>
+<div class = "menu-wrap">
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="active" role="presentation"><a href="index.php">Главная</a></li>
+                        <li class="menu-item" role="presentation"><a href="#">Новости</a></li>
+                        <li class="menu-item" role="presentation"><a href="comment.php">Отзыв о магазине</a></li>
+                        <!-- [YK] пока лишнееli class="menu-item" role="presentation"><a href="#">Как купить</a></li-->
+                        <!-- [YK] пока лишнее li class="menu-item" role="presentation"><a href="#">Гарантия</a></li-->
+                        <li class="menu-item" role="presentation"><a href="#">Контакты</a></li>
+                        <li class="menu-item" role="presentation"><a href="#">Войти или зарегистрироваться</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
 <div class = "container">
     <div class="header row">
         <div class = "block-height col-md-4">
@@ -72,4 +92,5 @@
 
 </div>
 </body>
+    <script src="{{ asset('bundles/admin/js/dataTables.min.js') }}"></script>
 </html>

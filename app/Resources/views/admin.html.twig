@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link href="{{ asset('bundles/bravoshop/css/style.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('bundles/bravoshop/css/bootstrap.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('bundles/bravoshop/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet">
+    <link href="{{ asset('bundles/admin/css/datatables.min.css') }}" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/ajax.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/bravoshop/js/all_pages.js') }}"></script>
+    <script src="{{ asset('bundles/bravoshop/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('bundles/bravoshop/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/bravoshop/js/func.js') }}"></script>
+</head>
+<body>
+<div class = "menu-wrap">
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="active" role="presentation"><a href="{{ path('admin_homepage') }}">Главная</a></li>
+                        <li class="menu-item" role="presentation"><a href="#">Новости</a></li>
+                        <li class="menu-item" role="presentation"><a href="{{ path('admin_products') }}">Товары</a></li>
+                        <li class="menu-item" role="presentation"><a href="#">Пользователи</a></li>
+                        <li class="menu-item" role="presentation"><a href="{{ path('bravo_shop_homepage') }}">Вернутся на сайт</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+
+</div>
+</body>
+<script src="{{ asset('bundles/admin/js/dataTables.min.js') }}"></script>
+</html>

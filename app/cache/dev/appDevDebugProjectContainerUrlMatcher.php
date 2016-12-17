@@ -105,6 +105,19 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        if (0 === strpos($pathinfo, '/admin')) {
+            // admin_homepage
+            if ($pathinfo === '/admin') {
+                return array (  '_controller' => 'Bravo\\AdminBundle\\Controller\\DefaultController::indexAction',  '_route' => 'admin_homepage',);
+            }
+
+            // admin_products
+            if ($pathinfo === '/admin/products') {
+                return array (  '_controller' => 'Bravo\\AdminBundle\\Controller\\ProductController::indexAction',  '_route' => 'admin_products',);
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/products')) {
             // products_index
             if (rtrim($pathinfo, '/') === '/products') {

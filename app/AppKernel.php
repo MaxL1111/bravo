@@ -17,6 +17,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new Bravo\ShopBundle\BravoShopBundle(),
+            new Bravo\AdminBundle\AdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev'], true)) {
