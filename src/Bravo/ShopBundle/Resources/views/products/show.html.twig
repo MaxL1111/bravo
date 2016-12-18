@@ -20,20 +20,21 @@
             </nav>
         </div>
         <div class="col-md-9">
-            {% for product in products %}
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a href = "{{ path('products_show', { 'id': product.id }) }}"><img src="{{ asset('bundles/bravoshop/images/') }}{{product.img }}" alt="item"/></a>
-                    <div class="caption">
-                        <a href = "{{ path('products_show', { 'id': product.id }) }}"><h3>{{product.title }}</h3></a>
-                        <p>Цена: {{product.price }} BYN</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">В корзину</a>
-                        </p>
-                    </div>
+            <div class="col-md-12">
+                <h3>{{product.title }}</h3>
+                <div class="thumbnail col-md-6">
+                    <img src="{{ asset('bundles/bravoshop/images/') }}{{product.img }}" alt="item"/>
+                </div>
+                <div class="caption col-md-6">
+                    <p>Цена: {{product.price }} BYN</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">В корзину</a>
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    {{product.description }}
                 </div>
             </div>
-            {% endfor %}
         </div>
     </div>
 {% endblock %}

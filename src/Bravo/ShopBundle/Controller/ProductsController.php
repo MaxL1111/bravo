@@ -57,11 +57,11 @@ class ProductsController extends Controller
      */
     public function showAction(Products $product)
     {
-        $deleteForm = $this->createDeleteForm($product);
+//        $deleteForm = $this->createDeleteForm($product);
 
-        return $this->render('products/show.html.twig', array(
+        return $this->render('BravoShopBundle:products:show.html.twig', array(
             'product' => $product,
-            'delete_form' => $deleteForm->createView(),
+//            'delete_form' => $deleteForm->createView(),
         ));
     }
 
