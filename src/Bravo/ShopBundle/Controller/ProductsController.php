@@ -33,7 +33,7 @@ class ProductsController extends Controller
      */
     public function newAction(Request $request)
     {
-        $product = new Product();
+        $product = new Products();
         $form = $this->createForm('Bravo\ShopBundle\Form\ProductsType', $product);
         $form->handleRequest($request);
 

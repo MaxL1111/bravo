@@ -1,4 +1,4 @@
 services:
-#    admin.example:
-#        class: AdminBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    admin.product-file:
+        class: Bravo\AdminBundle\Components\ProductFileComponent
+        arguments: ["@doctrine.orm.entity_manager"]

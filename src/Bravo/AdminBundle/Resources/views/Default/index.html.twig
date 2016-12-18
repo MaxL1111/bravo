@@ -1,5 +1,7 @@
 {% extends 'admin.html.twig' %}
 
 {% block body %}
-    MAIN PAGE ADMIN PANEL
+    <form action="{{ path('admin_homepage') }}" method="post">
+        <button type="submit" name = "getProducts" value="get" class="btn btn-primary">Get products list</button>
+    </form>
 {% endblock %}

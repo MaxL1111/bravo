@@ -35,9 +35,13 @@
         </div>
     </div>
 </div>
-    {% block body %}{% endblock %}
-    {% block javascripts %}{% endblock %}
-
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </div>
+    </div>
 </div>
 </body>
 <script src="{{ asset('bundles/admin/js/dataTables.min.js') }}"></script>
